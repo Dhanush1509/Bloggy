@@ -16,7 +16,7 @@ const Blog = () => {
     )[0];
     window.document.title = d.title;
     setBlog(d);
-  }, [location]);
+  }, [location,current_profile]);
  
   return (
     <div className={styles.blog}>
@@ -35,7 +35,7 @@ const Blog = () => {
             {`Published by ${blog.author}`}
           </div>
         </div>
-        {current_profile === blog.author_id && (
+        {current_profile == blog.author_id && (
           <Link to={`/update?id=${blog.id}`}>
             <button>Edit</button>
           </Link>

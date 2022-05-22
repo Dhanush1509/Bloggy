@@ -41,7 +41,7 @@ const Comments = () => {
     console.log(
       data.filter((c) => c.id == location.pathname.split("/")[2])[0].comments
     );
-  }, [location,data]);
+  }, [location,data,current_profile]);
 
   return (
     <div className={styles.Comments}>

@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import updateStyles from "../styles/Update.module.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import DataContext from "../context/dataContext";
 import { Editor } from "react-draft-wysiwyg";
 import draftToHtml from "draftjs-to-html";
@@ -19,7 +20,7 @@ const Update = () => {
   const { data, profiles, current_profile, addBlog } = useContext(DataContext);
 
   const fileHandler = useRef(null);
-
+const uuid = uuidv4();
   const [blog, setBlog] = useState({
     title: "",
     desc_html: "",
@@ -74,6 +75,7 @@ const Update = () => {
     else {
       load();
       addBlog({
+        id:uuid,
         author_id: current_profile,
         pDate: new Date(),
         author: profiles[current_profile - 1].name,
@@ -84,6 +86,7 @@ const Update = () => {
         uDate:new Date(),
         comments:[]
       });
+      
     }
   };
   const onEditorStateChange = (state) => {
@@ -95,7 +98,8 @@ const Update = () => {
     const timeout = setTimeout(() => {
       setLoading(false);
       clearTimeout(timeout);
-      // navigate(`/blog/${d.id}`);
+
+      navigate(`/blog/${uuid}`);
     }, 1000);
   };
   const handleClick = () => {

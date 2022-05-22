@@ -21,8 +21,8 @@ const Update = () => {
   const d = data.filter((c) => c.id == search)[0];
   const fileHandler = useRef(null);
   useEffect(() => {
-    if (d.author_id !== current_profile) navigate("/");
-  }, []);
+    if (d.author_id != current_profile) navigate("/");
+  }, [current_profile]);
 console.log(d)
   const blocksFromHtml = htmlToDraft(d&&d.desc_html);
   const { contentBlocks, entityMap } = blocksFromHtml;

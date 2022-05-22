@@ -20,8 +20,7 @@ const DataState = ({ children }) => {
       : 1,
   });
   const addBlog = (data) => {
-    const id = uuidv4();
-    dispatch({ type: "addBlog", payload: { ...data, id } });
+    dispatch({ type: "addBlog", payload: data });
   };
   const editBlog = (d) => {
     console.log(d);
