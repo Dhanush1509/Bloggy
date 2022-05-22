@@ -8,9 +8,10 @@ import DataContext from "../context/dataContext";
 const Blog = () => {
   const {data,current_profile}=useContext(DataContext)
   const location = useLocation();
-  console.log(location.pathname.split("/")[2]);
+  console.log(location.pathname.split("/")[2],current_profile);
   const [blog, setBlog] = useState({});
   useEffect(() => {
+
     const d = data.filter(
       (c) => c.id == location.pathname.split("/")[2]
     )[0];
