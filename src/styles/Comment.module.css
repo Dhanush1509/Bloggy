@@ -1,0 +1,16 @@
+.Comment{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-bottom:0.2px solid #a6a6a6;
+    width:100%;
+    margin-left:20px;
+}
+.Comment p{
+    margin:5px 0;
+}
+.Comment p:nth-child(2){
+    color:#a6a6a6;
+    font-size:14px;
+    margin-left:20px;
+}

@@ -1,0 +1,21 @@
+.Comments{
+  box-shadow: 1px 1px 3px #a6a6a6;
+  width:100%;
+  padding:20px;
+  margin-bottom:20px;
+}
+.Comments input{
+  width:100%;
+  height:30px;
+}
+.Comments .button{
+    background:rgb(17, 210, 72);
+    padding:4px 10px;
+    font-weight:bolder;
+    margin-top:10px;
+    color:rgb(255, 255, 255);
+    border-radius:3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px #a6a6a6;
+    border-color:rgb(17, 210, 72);
+}
