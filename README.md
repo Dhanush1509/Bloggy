@@ -1,6 +1,6 @@
 # Bloggy
 
-<p align='center'>A server-less basic blog app. All the information will be stored in Local Storage</p>
+### A server-less basic blog app. All the information will be stored in Local Storage
 
 ## Articles Page
 
