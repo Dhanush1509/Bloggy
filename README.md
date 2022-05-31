@@ -1,3 +1,42 @@
+# Bloggy
+
+<p align='center'>A server-less basic blog app. All the information will be stored in Local Storage</p>
+
+## Articles Page
+
+<p align='center'>
+<img src='./src/assets/screenshots/articles.png'>
+</p>
+
+## Article page
+
+<p align='center'>
+<img src='./src/assets/screenshots/article.png'>
+</p>
+
+## Edit Article Page
+
+<p align='center'>
+<img src='./src/assets/screenshots/editArticle.png'>
+</p>
+
+## Comment Section
+
+<p align='center'>
+<img src='./src/assets/screenshots/commentPage.png'>
+</p>
+
+## Create Article Page
+
+<p align='center'>
+<img src='./src/assets/screenshots/createArticle.png'>
+</p>
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
